@@ -1,0 +1,4 @@
+from app.controller.patientsController import PatientsController
+from app.controller.medicalRecordsController import MedicalRecordsController
+from app.controller.prescriptionsController import PrescriptionsController
+from app.controller.medicationsController import MedicationsController
