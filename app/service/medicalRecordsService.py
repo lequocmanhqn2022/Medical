@@ -16,6 +16,7 @@ class MedicalRecordsService():
             medicalrecords.date_of_visit = date_of_visit
         if diagnosis:
             medicalrecords.diagnosis = diagnosis
+        self.session.commit()
         return medicalrecords
 
     def delete(self, id):
