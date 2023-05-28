@@ -14,6 +14,7 @@ class PrescriptionsService():
         prescriptions = self.session.query(Prescriptions).filter(Prescriptions.id == id).first()
         if date_of_prescription:
             prescriptions.date_of_prescription = date_of_prescription
+        self.session.commit()
         return prescriptions
 
     def delete(self, id):
