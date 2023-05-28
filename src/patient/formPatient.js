@@ -15,6 +15,7 @@ if(updatePatient){
   birthday.value = updatePatientOb.patient.birthday;
   gender.value = updatePatientOb.patient.gender;
 
+  document.querySelector("title").textContent = "Update Patient";
   document.querySelector(".header > h1").textContent = "Update Patient";
   document.querySelector(".form-group > button").textContent = "Update";
 }
